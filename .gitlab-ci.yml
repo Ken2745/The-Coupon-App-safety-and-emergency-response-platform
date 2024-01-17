@@ -1,0 +1,5 @@
+ before_script:
+    # to export variable to target environment
+    - export SECRET_KEY=$SECRET_KEY  
+    # to check if OK
+    - env 
