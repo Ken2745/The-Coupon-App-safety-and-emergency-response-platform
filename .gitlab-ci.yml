@@ -1,14 +1,22 @@
-default:
-  image: ubuntu:20.04
-
+build:
+  stage: build
+  image: docker:20.10.16
   services:
-    - mysql:8.0
-  #
-  # This folder is cached between builds
-  # http://docs.gitlab.com/ee/ci/yaml/README.html#cache
-  cache:
-    paths:
-      - ~/.cache/pip/
+    - name: docker:20.10.16-dind
+      alias: docker
+  
+  variables: 
+    DOCKER_HOST: tcp://docker:2376
+    DOCKER_TLS_CERTDIR: "/certs"
+    DOCKER_TLS_VERIFY: 1
+    DOCKER_CERT_PATH: "/certs/client"
+  script:
+    - docker image build -t $CONTAINER_IMAGE:$CI_COMMIT_SHA -t $CONTAINER_IMAGE:latest .
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN registry.gitlab.com
+    - docker image push $CONTAINER_IMAGE:latest
+    - docker image push $CONTAINER_IMAGE:$CI_COMMIT_SHA
+  only:
+  - master
 
   before_script:
    # to export variable to target environment
