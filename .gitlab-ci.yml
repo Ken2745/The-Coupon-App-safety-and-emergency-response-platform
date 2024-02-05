@@ -1,18 +1,47 @@
-before_script:
+build:
+  stage: build
+  image: docker:20.10.16
+  services:
+    - name: docker:20.10.16-dind
+      alias: docker
+  
+  variables: 
+    DOCKER_HOST: tcp://docker:2376
+    DOCKER_TLS_CERTDIR: "/certs"
+    DOCKER_TLS_VERIFY: 1
+    DOCKER_CERT_PATH: "/certs/client"
+  script:
+    - docker image build -t $CONTAINER_IMAGE:$CI_COMMIT_SHA -t $CONTAINER_IMAGE:latest .
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN registry.gitlab.com
+    - docker image push $CONTAINER_IMAGE:latest
+    - docker image push $CONTAINER_IMAGE:$CI_COMMIT_SHA
+  only:
+  - master
+
+  before_script:
    # to export variable to target environment
    - export SECRET_KEY=$SECRET_KEY  
    # to check if OK
-   - env 
+   - env
+   #- apt -y update
+   #- apt -y install apt-utils
+   - apt -y install net-tools python3.8 python3-pip mysql-client libmysqlclient-dev
+   - apt -y upgrade
+   - pip3 install -r requirements.txt
 
 build-job:
   stage: build
   script:
     - echo "Hello, $GITLAB_USER_LOGIN!"
+    - python3 manage.py makemigrations
+    - python3 manage.py migrate
+    - python3 manage.py check
 
 test-job1:
   stage: test
   script:
     - echo "This job tests something"
+    - python3 manage.py test
 
 test-job2:
   stage: test
