@@ -1,0 +1,10 @@
+{% if form.errors %}
+    <div class="error">
+        Please correct the error below.
+    </div>
+{% endif %}
+<form id="login-form" method="post" hx-post="/login/" hx-target="#login-container" hx-swap="innerHTML">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+</form>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- Include HTMX library -->
+    <script src="https://unpkg.com/htmx.org@1.7.0/dist/htmx.min.js"></script>
+</head>
+<body>
+    <h1>Welcome to the Homepage</h1>
+    {% if user.is_authenticated %}
+        <p>Hello, {{ user.username }}!</p>
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+        <h2>Incident Logs</h2>
+        <!-- This div will be updated reactively by HTMX -->
+        <div id="incident-log-list" hx-get="/api/users/me/incident_logs/" hx-trigger="load, every 5s" hx-swap="innerHTML">
+            <!-- Initial loading message, will be replaced by the content from incident_logs_list.html -->
+            Loading incident logs...
+        </div>
+        
+    {% else %}
+        <p>You are not logged in.</p>
+        <a href="{% url 'login' %}">Login</a> |
+        <a href="{% url 'register' %}">Register</a>
+    {% endif %}
+</body>
+</html>

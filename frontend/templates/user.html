@@ -1,0 +1,28 @@
+<!-- user.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <script src="https://unpkg.com/htmx.org/dist/htmx.min.js"></script>
+</head>
+<body>
+    <h1>User Profile</h1>
+    <div id="user-info" hx-get="/api/users/me/" hx-trigger="load">
+        <!-- User details will be fetched dynamically and inserted here -->
+        <p>Username: <span hx-text="username">Loading...</span></p>
+        <p>Email: <span hx-text="email">Loading...</span></p>
+        <!-- Add more user details here -->
+    </div>
+    <div id="incident-logs" hx-get="/api/users/me/incident_logs/" hx-trigger="load">
+        <!-- Incident logs will be fetched dynamically and inserted here -->
+        <h2>Incident Logs</h2>
+        <ul>
+            <li hx-repeat="log in .">
+                <span hx-text="log.transcription"></span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

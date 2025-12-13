@@ -1,0 +1,12 @@
+<ul>
+    {% for log in incident_logs %}
+        <li>
+            <strong>Date:</strong> {{ log.timestamp|date:"Y-m-d H:i" }}<br>
+            <strong>Duration:</strong> {{ log.duration }} seconds<br>
+            <strong>Transcription:</strong> {{ log.transcription }}<br>
+            <strong>Notes:</strong> {{ log.notes|default:"No notes" }}<br>
+        </li>
+    {% empty %}
+        <li>No incident logs found.</li>
+    {% endfor %}
+</ul>

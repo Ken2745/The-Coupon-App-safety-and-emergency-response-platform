@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">The Coupon App</string>
+    <string name="Team_Welcome">Welcome Team Black!</string>
+    <string name="Login_Banner">The Coupon App</string>
+    <string name="Login_Button"> Login</string>
+    <string name="Registration_Message">No Account? Sign Up Today!</string>
+    <string name="Register">Register</string>
+    <string name="Email_Prompt">Email</string>
+    <string name="Username_Prompt">Username</string>
+    <string name="Password_Prompt">Password</string>
+    <string name="Confirm_Password">Re-Enter Password</string>
+    <string name="Already_Member_Message">Already Have An Account?</string>
+    <string name="Home_Button">Home</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="title_activity_audio_classification">audio_classification</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="keyword_label">Keyword</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="footer">Made in Vancouver, Canada by Picovoice</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="location_permission">Location\nPermission</string>
+    <string name="location_coordinates">Location\ncoordinates</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="the_coupon_app">The Coupon App</string>
+    <string name="settings">Settings</string>
+    <string name="first_name">First Name:</string>
+    <string name="emergency_contact_2">Emergency Contact 2:</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="emergency_contact_1">Emergency Contact 1:</string>
+    <string name="date_of_birth">Date of Birth:</string>
+    <string name="email">Email:</string>
+    <string name="feature_settings">Feature Settings</string>
+    <string name="theme_settings">Theme Settings</string>
+    <string name="wake_word_settings">Wake Word Settings</string>
+    <string name="danger_assessment">Danger Assessment</string>
+    <string name="family_information">Family Information</string>
+    <string name="additional_settings">Additional Settings</string>
+    <string name="profile">Profile</string>
+    <string name="username_prompt">Username</string>
+    <string name="add_incident">Add Incident</string>
+    <string name="transcription">Transcription</string>
+    <string name="view_details">View Details</string>
+    <string name="view_details_button">View Details Button</string>
+    <string name="channel_name">Notifications</string>
+    <string name="channel_description">Notification channel for app updates</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="exit_safe">Safe Exit</string>
+    <string name="menu">Menu</string>
+    <string name="incident_log">Incident Log</string>
+    <string name="wake_words">Wake Words</string>
+    <string name="communications">Communications</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="local_resources">Local Resources</string>
+    <string name="safe_exit">Safe Exit</string>
+    <string name="logout">Logout</string>
+    <string name="navigate_to_setting">Navigate to settings.</string>
+    <string name="theme">Theme</string>
+    <string name="home">Home</string>
+    <string name="enter_zip">Enter Zip Code</string>
+    <string name="channelInfo" />
+    <string name="label" />
+    <string name="add_note_hint">Add notes.</string>
+    <string name="close">Close</string>
+    <string name="housing">Housing</string>
+    <string name="shelters">Shelters</string>
+    <string name="legal">Legal</string>
+    <string name="ndvhUrl">https://www.thehotline.org/</string>
+    <string name="twoPartyStates">
+        List of States That Require Two-Party Consent for Recording:\n
+        California\n
+        Delaware\n
+        Florida\n
+        Illinois\n
+        Maryland\n
+        Massachusetts\n
+        Michigan\n
+        Montana\n
+        New Hampshire\n
+        Pennsylvania\n
+        Washington
+    </string>
+    <string name="mixedConsentStates">
+        List of States That Have Mixed Consent for Recording:\n
+        Oregon\n
+        Connecticut
+    </string>
+    <string name="legalNotice">
+        Notice: Recording Laws in the US differ from state to state.
+        Always check your state\'s laws before recording.
+    </string>
+    <string name="legalWebResource">
+        https://worldpopulationreview.com/state-rankings/two-party-consent-states
+    </string>
+    <string name="consentDefinition">In Two-Party (or all-party) consent states it is required by
+        state law that all parties that partake in a conversation must have given consent for that
+        conversation to be recorded when there is an expectation of privacy.</string>
+    <string name="select_wake_word">Select wake word</string>
+    <string name="send_sms_phone_call_email">Send SMS, Phone call, Email</string>
+    <string name="choose_a_wake_word">Choose a wake word</string>
+    <string name="enable_wake_word_control">Enable wake word control</string>
+    <string name="start_recording">Start Recording</string>
+    <string name="stop_recording">Stop Recording</string>
+    <string name="pause_safety_monitoring">Pause Safety Monitoring</string>
+    <string name="play_audio">Play/Stop Audio</string>
+    <string name="relationship">Relationship</string>
+    <string name="primary_contact">Primary Contact</string>
+    <string name="call">Call\n</string>
+    <string name="save">Save</string>
+
+</resources>

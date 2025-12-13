@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nav_home" type="id"/>
+    <item name="nav_incident_log" type="id"/>
+    <item name="nav_wake_words" type="id"/>
+    <item name="nav_communications" type="id"/>
+    <item name="nav_emergency_contacts" type="id"/>
+    <item name="nav_local_resources" type="id"/>
+    <item name="nav_settings" type="id"/>
+    <item name="nav_safe_exit" type="id"/>
+    <item name="nav_logout" type="id"/>
+    <item name="text_view_timestamp" type="id" />
+    <item name="text_view_severity" type="id" />
+    <item name="buttonSave1" type="id" />
+    <item name="textViewPasswordResetLabel" type="id" />
+    <item name="editTextCurrentPassword" type="id" />
+    <item name="editTextNewPassword" type="id" />
+    <item name="editTextConfirmPassword" type="id" />
+</resources>

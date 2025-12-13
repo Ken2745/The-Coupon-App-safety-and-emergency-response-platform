@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    android:background="@drawable/app_background"
+    tools:context=".ui.fragments.CommunicationsFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UseSwitchCompatOrMaterialXml">
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:paddingTop="30dp"
+            android:inputType="text"
+            android:text="Email" />
+
+        <Switch
+            android:id="@+id/Email_Switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Automatically Send Email to Emergency Contact"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/GPS_SMS_Switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send GPS location in Email"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <EditText
+            android:id="@+id/editTextText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Message" />
+
+        <Switch
+            android:id="@+id/Message_Switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Message to Emergency Contacts"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/GPS_Email_Switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send GPS location in Email"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <EditText
+            android:id="@+id/editTextText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Phone Call" />
+
+        <Switch
+            android:id="@+id/Emergency_Contact_Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Call to Emergency Contact"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/Authority_Phone_Call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Call to Authorities"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

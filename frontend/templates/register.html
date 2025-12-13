@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <script src="https://unpkg.com/htmx.org"></script>
+</head>
+<body>
+    <h2>Register</h2>
+    <div id="registration-container">
+        {% include 'partials/registration_form.html' %}
+    </div>
+    <p>Already have an account? <a href="{% url 'login' %}">Login here</a>.</p>
+</body>
+</html>
