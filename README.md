@@ -52,6 +52,12 @@ The-Coupon-App/
 └── README.md
 ```
 
+## Related Repositories
+
+The Android mobile application is maintained in a **separate repository** to keep frontend and backend concerns isolated:
+
+* **Android Application Repository**: Contains the full Android client, UI components, voice activation services, and on-device AI integrations.
+
 ## Installation & Setup
 
 ### Android Application
@@ -93,3 +99,5 @@ This project was developed collaboratively. Team members contributed across fron
 ## Project Status
 
 This project is no longer under active development and is maintained for academic reference and portfolio purposes.
+
+
