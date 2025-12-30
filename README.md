@@ -95,6 +95,7 @@ The Android mobile application is maintained in a **separate repository** to kee
 ## Collaboration
 
 This project was developed collaboratively. Team members contributed across frontend development, backend services, database design, AI integration, and CI/CD setup.
+Implemented user stories in Jira to mitigate development risks and organize tasks, actively leveraging Scrum meetings to drive application progress.
 
 ## Project Status
 
