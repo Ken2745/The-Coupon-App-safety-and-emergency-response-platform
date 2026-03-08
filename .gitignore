@@ -1,1 +1,102 @@
-.venv
+# ==============================
+# Python / Django
+# ==============================
+
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
+*.env
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Django stuff
+staticfiles/
+media/
+
+# Migrations cache
+**/migrations/*.pyc
+
+# ==============================
+# IDEs
+# ==============================
+
+.vscode/
+.idea/
+*.iml
+
+# ==============================
+# OS Files
+# ==============================
+
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Android / Gradle
+# ==============================
+
+.gradle/
+build/
+app/build/
+local.properties
+
+# Android Studio
+captures/
+.externalNativeBuild/
+.cxx/
+
+# APK files
+*.apk
+*.aab
+
+# ==============================
+# Node / frontend tools
+# ==============================
+
+node_modules/
+
+# ==============================
+# Environment files
+# ==============================
+
+.env
+.env.local
+.env.production
+.env.development
+
+# ==============================
+# Logs
+# ==============================
+
+*.log
+
+# ==============================
+# Coverage / Testing
+# ==============================
+
+.coverage
+htmlcov/
+.pytest_cache/
+
+# ==============================
+# MacOS junk
+# ==============================
+
+.AppleDouble
+.LSOverride
+
+# ==============================
+# Secrets
+# ==============================
+
+google-services.json
+secrets.json

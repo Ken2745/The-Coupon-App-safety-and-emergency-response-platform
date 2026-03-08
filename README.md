@@ -1,6 +1,6 @@
 # The Coupon App
 
-A multi-component repository combining an Android client, a Django API server, and a minimal web interface. Originally built as an academic project to deliver safety resources under the guise of a coupon‑clipping application.
+The Coupon App is a safety-focused mobile platform disguised as a coupon application to discreetly provide access to safety resources and incident logging. A multi-component repository combining an Android client, a Django API server, and a minimal web interface.
 
 ---
 
@@ -9,10 +9,30 @@ A multi-component repository combining an Android client, a Django API server, a
 | Directory | Purpose | Notes |
 |-----------|---------|-------|
 | `app/` | **Android mobile application** | Java/Gradle project with UI, services, and ML models. See [app/README.md](app/README.md). |
-| `backend/` | **Django backend & API** | Stores data, handles auth, and exposes REST endpoints. See [backend/README.md](backend/README.md). |
+| `backend/` | **Django backend & API** | Data storage, handles auth, and exposes REST endpoints. See [backend/README.md](backend/README.md). |
 | `frontend/` | **Web templates & static assets** | Simple Django templates that use HTMX to call the API. See [frontend/README.md](frontend/README.md). |
 
+
 > 🗑️ The other top‑level folders (`djangofile/`, `mysite/`, `polls/`, `gradle/`, etc.) are legacy/demo projects and can be removed if you're focusing on the core application.
+
+---
+## 🛠 Tech Stack
+
+Backend
+- Python
+- Django
+- Django REST Framework
+- JWT Authentication
+
+Mobile
+- Android (Java)
+- Gradle
+- TensorFlow Lite
+- Porcupine Wake Word Detection
+
+Frontend
+- Django Templates
+- HTMX
 
 ---
 
@@ -47,6 +67,17 @@ Configure the base URL (e.g. `http://10.0.2.2:8000/api/` for emulator) then inst
 No build step. Visit `http://127.0.0.1:8000/` after starting the backend. Templates fetch data with HTMX.
 
 ---
+
+## Architecture Overview
+
+Android App
+      │
+      │ REST API
+      ▼
+Django Backend
+      │
+      ▼
+Database
 
 ## 🔧 Architecture Highlights
 
