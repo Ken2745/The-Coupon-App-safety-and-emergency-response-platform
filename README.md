@@ -4,7 +4,7 @@ The Coupon App is a safety-focused mobile platform disguised as a coupon applica
 
 ---
 
-## 📁 Core Components
+## Core Components
 
 | Directory | Purpose | Notes |
 |-----------|---------|-------|
@@ -13,10 +13,8 @@ The Coupon App is a safety-focused mobile platform disguised as a coupon applica
 | `frontend/` | **Web templates & static assets** | Simple Django templates that use HTMX to call the API. See [frontend/README.md](frontend/README.md). |
 
 
-> 🗑️ The other top‑level folders (`djangofile/`, `mysite/`, `polls/`, `gradle/`, etc.) are legacy/demo projects and can be removed if you're focusing on the core application.
-
 ---
-## 🛠 Tech Stack
+## Tech Stack
 
 Backend
 - Python
@@ -35,8 +33,6 @@ Frontend
 - HTMX
 
 ---
-
-## 🚀 Getting Started
 
 ### Backend
 
@@ -79,7 +75,7 @@ Django Backend
       ▼
 Database
 
-## 🔧 Architecture Highlights
+## Architecture Highlights
 
 * **Discreet UI** – the mobile app appears as a coupon app, with safe‑exit and hidden PIN navigation.
 * **Voice & ML** – uses Porcupine wake words and TensorFlow Lite models stored in `app/src/main/assets/`.
